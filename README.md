@@ -9,7 +9,7 @@ An Oracle SQL database for a restaurant chain.
 
 ### 1. Models and Planning
 
-- [ ] Logical Modelling
+- [x] Logical Modelling
 - [ ] Physical Modelling
 
 ### 2. Implementation
