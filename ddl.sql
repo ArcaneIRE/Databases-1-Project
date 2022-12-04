@@ -81,6 +81,7 @@ CREATE TABLE
         PRIMARY KEY (booking_id, customer_id)
     );
 
+-- Oracle SQL UDF to check customer > 18. Questionable formatting by the prettier plugin
 CREATE
 OR REPLACE FUNCTION is_customer_over_18 (customer_id NUMBER) RETURN NUMBER AS v_dob DATE;
 
