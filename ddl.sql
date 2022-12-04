@@ -72,6 +72,15 @@ CREATE TABLE
         CONSTRAINT bookingreceipt_bookingcustomer_fk FOREIGN KEY (booking_customer_id) Customers (id)
     );
 
+CREATE TABLE
+    BookingCustomers (
+        booking_id INT NOT NULL,
+        customer_id INT NOT NULL,
+        CONSTRAINT bc_booking_fk FOREIGN KEY (booking_id) REFERENCES BookingReceipts (id),
+        CONSTRAINT bc_customer_fk FOREIGN KEY (customer_id) REFERENCES Customers (id),
+        PRIMARY KEY (booking_id, customer_id)
+    );
+
 CREATE
 OR REPLACE FUNCTION is_customer_over_18 (customer_id NUMBER) RETURN NUMBER AS v_dob DATE;
 
