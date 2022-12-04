@@ -34,6 +34,17 @@ CREATE TABLE
         id INTEGER PRIMARY KEY,
         seats INTEGER NOT NULL,
         location VARCHAR2(20 CHAR) NOT NULL,
-        restaurants_id INTEGER NOT NULL,
-        CONSTRAINT diningtable_restaurant_fk FOREIGN KEY (restaurants_id) REFERENCES Restaurants (id)
+        restaurant_id INTEGER NOT NULL,
+        CONSTRAINT diningtable_restaurant_fk FOREIGN KEY (restaurant_id) REFERENCES Restaurants (id)
+    );
+
+CREATE TABLE
+    Staff (
+        id INTEGER NOT NULL,
+        person_id INEGER NOT NULL,
+        role VARCHAR2(20 CHAR) NOT NULL CHECK (role IN ('waiter', 'manager')),
+        start_date DATE NOT NULL,
+        restaurant_id INTEGER NOT NULL,
+        CONSTRAINT staff_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
+        CONSTRAINT staff_restaurants_fk FOREIGN KEY (restaurant_id) REFERENCES Restaurants (id)
     );
