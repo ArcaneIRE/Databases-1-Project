@@ -55,3 +55,17 @@ CREATE TABLE
         person_id INTEGER,
         CONSTRAINT customer_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
     );
+
+CREATE TABLE
+    BookingReceipts (
+        id INTEGER PRIMARY KEY,
+        timestamp TIMESTAMP default CURRENT_TIMESTAMP,
+        num_people INTEGER NOT NULL,
+        booking_method VARCHAR2(20 CHAR) NOT NULL,
+        dining_table_id INTEGER NOT NULL,
+        waiter_id INTEGER NOT NULL,
+        manager_id INTEGER NOT NULL,
+        CONSTRAINT bookingreceipt_waiter_fk FOREIGN KEY (waiter_id) REFERENCES People (id),
+        CONSTRAINT bookingreceipt_manager_fk FOREIGN KEY (waiter_id) REFERENCES People (id),
+        CONSTRAINT bookingreceipt_diningtable_fk FOREIGN KEY (dining_table_id) DiningTables (id)
+    );
