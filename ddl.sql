@@ -41,7 +41,7 @@ CREATE TABLE
 CREATE TABLE
     Staff (
         id INTEGER NOT NULL,
-        person_id INEGER NOT NULL,
+        person_id INTEGER NOT NULL,
         role VARCHAR2(20 CHAR) NOT NULL CHECK (role IN ('waiter', 'manager')),
         start_date DATE NOT NULL,
         restaurant_id INTEGER NOT NULL,
@@ -63,9 +63,42 @@ CREATE TABLE
         num_people INTEGER NOT NULL,
         booking_method VARCHAR2(20 CHAR) NOT NULL,
         dining_table_id INTEGER NOT NULL,
+        booking_customer_id INTEGER NOT NULL,
         waiter_id INTEGER NOT NULL,
         manager_id INTEGER NOT NULL,
         CONSTRAINT bookingreceipt_waiter_fk FOREIGN KEY (waiter_id) REFERENCES People (id),
         CONSTRAINT bookingreceipt_manager_fk FOREIGN KEY (waiter_id) REFERENCES People (id),
-        CONSTRAINT bookingreceipt_diningtable_fk FOREIGN KEY (dining_table_id) DiningTables (id)
+        CONSTRAINT bookingreceipt_diningtable_fk FOREIGN KEY (dining_table_id) DiningTables (id),
+        CONSTRAINT bookingreceipt_bookingcustomer_fk FOREIGN KEY (booking_customer_id) Customers (id)
     );
+
+CREATE
+OR REPLACE FUNCTION is_customer_over_18 (customer_id NUMBER) RETURN NUMBER AS v_dob DATE;
+
+v_age NUMBER;
+
+BEGIN
+    -- Query the dob from the Person table using the customer id
+SELECT
+    dob INTO v_dob
+FROM
+    Person
+WHERE
+    id = customer_id;
+
+-- Calculate the age from the dob
+v_age := trunc(months_between(sysdate, v_dob) / 12);
+
+-- Return 1 if the age is over 18, 0 otherwise
+RETURN CASE
+    WHEN v_age >= 18 THEN 1
+    ELSE 0
+END;
+
+END;
+
+-- Create a constraint on the BookingReceipts table that uses the is_customer_over_18 UDF
+ALTER TABLE
+    BookingReceipts
+ADD
+    CONSTRAINT customer_over_18_ck CHECK (is_customer_over_18 (customer_id) = 1);
