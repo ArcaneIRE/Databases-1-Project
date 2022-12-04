@@ -1,0 +1,23 @@
+{
+  "name": "burgershack",
+  "version": "1.0.0",
+  "description": "An Oracle SQL database for a restaurant chain.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcaneIRE/Databases-1-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArcaneIRE/Databases-1-Project/issues"
+  },
+  "homepage": "https://github.com/ArcaneIRE/Databases-1-Project#readme",
+  "devDependencies": {
+    "prettier": "^2.8.0",
+    "prettier-plugin-sql": "^0.12.1"
+  }
+}
