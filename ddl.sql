@@ -18,5 +18,13 @@ CREATE TABLE
         email VARCHAR2(255 CHAR) NOT NULL,
         phone_number VARCHAR2(15 CHAR) NOT NULL,
         address_id INTEGER NOT NULL,
-        CONSTRAINT fk_address_id FOREIGN KEY (address_id) REFERENCES Addresses (id)
+        CONSTRAINT people_address_fk FOREIGN KEY (address_id) REFERENCES Addresses (id)
+    );
+
+CREATE TABLE
+    Restaurants (
+        restaurant_id INTEGER PRIMARY KEY,
+        phone_number VARCHAR2(15 CHAR) NOT NULL,
+        address_id INTEGER NOT NULL,
+        CONSTRAINT restauraunt_address_fk FOREIGN KEY (address_id) REFERENCES Addresses (id)
     );
