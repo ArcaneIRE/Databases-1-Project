@@ -28,3 +28,12 @@ CREATE TABLE
         address_id INTEGER NOT NULL,
         CONSTRAINT restauraunt_address_fk FOREIGN KEY (address_id) REFERENCES Addresses (id)
     );
+
+CREATE TABLE
+    DiningTables (
+        id INTEGER PRIMARY KEY,
+        seats INTEGER NOT NULL,
+        location VARCHAR2(20 CHAR) NOT NULL,
+        restaurants_id INTEGER NOT NULL,
+        CONSTRAINT diningtable_restaurant_fk FOREIGN KEY (restaurants_id) REFERENCES Restaurants (id)
+    );
