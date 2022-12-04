@@ -48,3 +48,10 @@ CREATE TABLE
         CONSTRAINT staff_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
         CONSTRAINT staff_restaurants_fk FOREIGN KEY (restaurant_id) REFERENCES Restaurants (id)
     );
+
+CREATE TABLE
+    Customers (
+        id INTEGER PRIMARY KEY,
+        person_id INTEGER,
+        CONSTRAINT customer_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
+    );
