@@ -1,3 +1,27 @@
+DROP TABLE
+    BookingGuests;
+
+DROP TABLE
+    BookingReceipts;
+
+DROP TABLE
+    Customers;
+
+DROP TABLE
+    Staff;
+
+DROP TABLE
+    DiningTables;
+
+DROP TABLE
+    Restaurants;
+
+DROP TABLE
+    People;
+
+DROP TABLE
+    Addresses;
+
 CREATE TABLE
     Addresses (
         id INTEGER PRIMARY KEY,
