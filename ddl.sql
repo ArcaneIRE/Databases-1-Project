@@ -68,8 +68,8 @@ CREATE TABLE
         manager_id INTEGER NOT NULL,
         CONSTRAINT bookingreceipt_waiter_fk FOREIGN KEY (waiter_id) REFERENCES Staff (id),
         CONSTRAINT bookingreceipt_manager_fk FOREIGN KEY (manager_id) REFERENCES Staff (id),
-        CONSTRAINT bookingreceipt_diningtable_fk FOREIGN KEY (dining_table_id) DiningTables (id),
-        CONSTRAINT bookingreceipt_bookingcustomer_fk FOREIGN KEY (booking_customer_id) Customers (id)
+        CONSTRAINT bookingreceipt_diningtable_fk FOREIGN KEY (dining_table_id) REFERENCES DiningTables (id),
+        CONSTRAINT bookingreceipt_bookingcustomer_fk FOREIGN KEY (booking_customer_id) REFERENCES Customers (id)
     );
 
 CREATE TABLE
