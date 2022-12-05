@@ -7,7 +7,7 @@ CREATE TABLE
         locality VARCHAR2(20 CHAR) NOT NULL,
         region VARCHAR2(20 CHAR) NOT NULL,
         postcode VARCHAR2(20 CHAR) NOT NULL,
-        country VARCHAR2(20 CHAR) NOT NULL,
+        country VARCHAR2(20 CHAR) NOT NULL
     );
 
 CREATE TABLE
@@ -53,7 +53,7 @@ CREATE TABLE
     Customers (
         id INTEGER PRIMARY KEY,
         person_id INTEGER,
-        CONSTRAINT customer_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
+        CONSTRAINT customer_person_fk FOREIGN KEY (person_id) REFERENCES People (id)
     );
 
 CREATE TABLE
