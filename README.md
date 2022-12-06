@@ -2,8 +2,8 @@
 
 An Oracle SQL database for a restaurant chain.
 
-- Scenario given in `case_study_notes`
-- Exact specifications given in `project_spec_notes`
+- Scenario given in the [case study notes](/spec/case_study_notes.md)
+- Exact specifications given in the [project spec notes](spec/project_spec_notes)
 
 ## Tasks To Do
 
