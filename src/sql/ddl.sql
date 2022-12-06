@@ -138,7 +138,7 @@ END;
 / 
 
 CREATE
-OR REPLACE TRIGGER num_people_check_trigger BEFORE
+OR REPLACE TRIGGER check_num_people BEFORE
 INSERT
     ON BookingReceipts FOR EACH ROW
 DECLARE
