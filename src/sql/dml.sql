@@ -73,3 +73,25 @@ FROM
 
 --  One INTERSECT
 --  One VIEW
+--
+-- Creates a virtual table that contains a list of restaurants with their phone numbers 
+-- and the number of total bookings made for each restaurant 
+CREATE OR REPLACE VIEW
+    BookingCounts AS
+SELECT
+    r.id AS restaurant_id,
+    r.phone_number,
+    COUNT(br.id) AS num_bookings
+FROM
+    Restaurants r
+    JOIN DiningTables dt ON r.id = dt.restaurant_id
+    JOIN BookingReceipts br ON dt.id = br.dining_table_id
+GROUP BY
+    r.id,
+    r.phone_number;
+
+-- Query all rows from the view
+SELECT
+    *
+FROM
+    BookingCounts
