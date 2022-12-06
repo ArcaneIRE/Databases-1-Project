@@ -49,7 +49,31 @@ GROUP BY
     staff.role;
 
 --  One LEFT OUTER JOIN
+--
+-- Lists all people from the people table, alongside their bookings and booking size, if they have any.
+SELECT
+    People.person_name,
+    BookingReceipts.id AS "Booking ID",
+    BookingReceipts.num_people
+FROM
+    People
+    LEFT OUTER JOIN BookingReceipts ON People.id = BookingReceipts.booking_customer_id;
+
 --  One RIGHT OUTER JOIN
+--
+-- Lists all bookings and contact information for each person at that booking.
+-- This could be used for contact tracing, for example.
+SELECT
+    BookingGuests.booking_id,
+    People.person_name,
+    Customers.email
+FROM
+    Customers
+    RIGHT OUTER JOIN BookingGuests ON Customers.id = BookingGuests.customer_id
+    INNER JOIN People ON BookingGuests.customer_id = People.id
+ORDER BY
+    BookingGuests.booking_id;
+
 --  One UNION
 -- 
 -- Returns the following 4 shared attributes of all Staff and Customers
