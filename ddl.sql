@@ -25,19 +25,19 @@ DROP TABLE
 CREATE TABLE
     Addresses (
         id INTEGER PRIMARY KEY,
-        line1 VARCHAR2(20 CHAR) NOT NULL,
-        line2 VARCHAR2(20 CHAR),
-        line3 VARCHAR2(20 CHAR),
-        locality VARCHAR2(20 CHAR),
-        region VARCHAR2(20 CHAR) NOT NULL,
-        postcode VARCHAR2(20 CHAR),
-        country VARCHAR2(20 CHAR) NOT NULL
+        line1 VARCHAR2(30 CHAR) NOT NULL,
+        line2 VARCHAR2(30 CHAR),
+        line3 VARCHAR2(30 CHAR),
+        locality VARCHAR2(30 CHAR),
+        region VARCHAR2(30 CHAR) NOT NULL,
+        postcode VARCHAR2(30 CHAR),
+        country VARCHAR2(30 CHAR) NOT NULL
     );
 
 CREATE TABLE
     People (
         id INTEGER PRIMARY KEY,
-        person_name VARCHAR2(20 CHAR) NOT NULL,
+        person_name VARCHAR2(50 CHAR) NOT NULL,
         dob DATE NOT NULL,
         phone_number VARCHAR2(15 CHAR) NOT NULL,
         address_id INTEGER NOT NULL,
@@ -55,8 +55,8 @@ CREATE TABLE
 CREATE TABLE
     DiningTables (
         id INTEGER PRIMARY KEY,
-        seats INTEGER NOT NULL,
-        location VARCHAR2(20 CHAR) NOT NULL,
+        seats INTEGER NOT NULL CHECK (seats IN (2, 4, 6, 8)),
+        location VARCHAR2(20 CHAR) NOT NULL CHECK (location IN ('window', 'interior')),
         restaurant_id INTEGER NOT NULL,
         CONSTRAINT diningtable_restaurant_fk FOREIGN KEY (restaurant_id) REFERENCES Restaurants (id)
     );
@@ -86,7 +86,7 @@ CREATE TABLE
         id INTEGER PRIMARY KEY,
         timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         num_people INTEGER NOT NULL,
-        booking_method VARCHAR2(20 CHAR) NOT NULL,
+        booking_method VARCHAR2(20 CHAR) NOT NULL CHECK (booking_method IN ('online', 'phone', 'manager')),
         dining_table_id INTEGER NOT NULL,
         booking_customer_id INTEGER NOT NULL,
         age INTEGER NOT NULL,

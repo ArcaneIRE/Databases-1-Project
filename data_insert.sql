@@ -3,7 +3,16 @@
 -- 10 for staff
 -- 5 for restaurants
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         1,
@@ -17,7 +26,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         2,
@@ -31,7 +49,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         3,
@@ -45,7 +72,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         4,
@@ -59,7 +95,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         5,
@@ -73,7 +118,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         6,
@@ -87,7 +141,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         7,
@@ -101,7 +164,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         8,
@@ -115,7 +187,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         9,
@@ -129,7 +210,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         10,
@@ -143,7 +233,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         11,
@@ -157,7 +256,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         12,
@@ -171,7 +279,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         13,
@@ -185,7 +302,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         14,
@@ -199,7 +325,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         15,
@@ -213,7 +348,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         16,
@@ -227,7 +371,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         17,
@@ -241,7 +394,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         18,
@@ -255,7 +417,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         19,
@@ -269,7 +440,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         20,
@@ -281,3 +461,584 @@ VALUES
         'D03 JJJ',
         'Ireland'
     );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        1,
+        'John Doe',
+        TO_DATE('2000-01-01', 'yyyy-mm-dd'),
+        'johndoe@example.com',
+        '5555551212',
+        1
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        2,
+        'Jane Doe',
+        TO_DATE('2000-02-02', 'yyyy-mm-dd'),
+        'janedoe@example.com',
+        '5555551313',
+        2
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        3,
+        'James Smith',
+        TO_DATE('2000-03-03', 'yyyy-mm-dd'),
+        'jamessmith@example.com',
+        '5555551414',
+        3
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        4,
+        'Emily Johnson',
+        TO_DATE('2000-04-04', 'yyyy-mm-dd'),
+        'emilyjohnson@example.com',
+        '5555551515',
+        4
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        5,
+        'Samantha Williams',
+        TO_DATE('2000-05-05', 'yyyy-mm-dd'),
+        'samanthawilliams@example.com',
+        '5555551616',
+        5
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        6,
+        'Michael Brown',
+        TO_DATE('2000-06-06', 'yyyy-mm-dd'),
+        'michaelbrown@example.com',
+        '5555551717',
+        6
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        7,
+        'Sara Davis',
+        TO_DATE('2000-07-07', 'yyyy-mm-dd'),
+        'saradavis@example.com',
+        '5555551818',
+        7
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        8,
+        'William Thompson',
+        TO_DATE('2000-08-08', 'yyyy-mm-dd'),
+        'williamthompson@example.com',
+        '5555551919',
+        8
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        9,
+        'Ashley Taylor',
+        TO_DATE('2000-03-03', 'yyyy-mm-dd'),
+        'ashleytaylor@example.com',
+        '5555552020',
+        9
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        10,
+        'Richard Anderson',
+        TO_DATE('2000-10-10', 'yyyy-mm-dd'),
+        'richardanderson@example.com',
+        '5555552121',
+        10
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        11,
+        'Emily Davis',
+        TO_DATE('2000-11-11', 'yyyy-mm-dd'),
+        'emilydavis@example.com',
+        '5555552222',
+        11
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        12,
+        'Daniel Johnson',
+        TO_DATE('2000-12-12', 'yyyy-mm-dd'),
+        'danieljohnson@example.com',
+        '5555552323',
+        12
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        13,
+        'Emma Williams',
+        TO_DATE('2000-01-01', 'yyyy-mm-dd'),
+        'emmawilliams@example.com',
+        '5555552424',
+        13
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        14,
+        'Michael Thompson',
+        TO_DATE('2000-02-02', 'yyyy-mm-dd'),
+        'michaelthompson@example.com',
+        '5555552525',
+        14
+    );
+
+INSERT INTO
+    People (
+        id,
+        person_name,
+        dob,
+        email,
+        phone_number,
+        address_id
+    )
+VALUES
+    (
+        15,
+        'Sara Taylor',
+        TO_DATE('2000-03-03', 'yyyy-mm-dd'),
+        'sarataylor@example.com',
+        '5555552626',
+        15
+    );
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (1, '5555551212', 16);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (2, '5555551313', 17);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (3, '5555551414', 18);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (4, '5555551515', 19);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (5, '5555551616', 20);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (1, 4, 'window', 1);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (2, 2, 'interior', 1);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (3, 6, 'window', 2);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (4, 4, 'interior', 2);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (5, 8, 'window', 3);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (6, 6, 'interior', 3);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (7, 4, 'window', 4);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (8, 8, 'interior', 4);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (9, 8, 'window', 5);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (10, 2, 'interior', 5);
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        1,
+        1,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        1
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        2,
+        2,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        1
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        3,
+        3,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        2
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        4,
+        4,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        2
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        5,
+        5,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        3
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        6,
+        6,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        3
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        7,
+        7,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        4
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        8,
+        8,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        4
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        9,
+        9,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        5
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        10,
+        10,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        5
+    );
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (1, 11);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (2, 12);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (3, 13);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (4, 14);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (5, 15);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (1, 2, 'online', 1, 1, 1, 2);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (2, 4, 'phone', 2, 2, 3, 4);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (3, 6, 'manager', 3, 3, 5, 6);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (4, 8, 'online', 4, 4, 7, 8);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (5, 2, 'phone', 5, 5, 9, 10);
+
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 11)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 12)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 13)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 14)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 15)
