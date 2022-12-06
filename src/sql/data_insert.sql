@@ -941,7 +941,7 @@ INSERT INTO
         manager_id
     )
 VALUES
-    (2, 4, 'phone', 2, 2, 3, 4);
+    (2, 2, 'phone', 2, 2, 3, 4);
 
 INSERT INTO
     BookingReceipts (
@@ -954,7 +954,7 @@ INSERT INTO
         manager_id
     )
 VALUES
-    (3, 6, 'manager', 3, 3, 5, 6);
+    (3, 4, 'manager', 3, 3, 5, 6);
 
 INSERT INTO
     BookingReceipts (
@@ -967,7 +967,7 @@ INSERT INTO
         manager_id
     )
 VALUES
-    (4, 8, 'online', 4, 4, 7, 8);
+    (4, 4, 'online', 4, 4, 7, 8);
 
 INSERT INTO
     BookingReceipts (
