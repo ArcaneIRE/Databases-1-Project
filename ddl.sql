@@ -56,8 +56,8 @@ CREATE TABLE
 CREATE TABLE
     DiningTables (
         id INTEGER PRIMARY KEY,
-        seats INTEGER NOT NULL,
-        location VARCHAR2(20 CHAR) NOT NULL,
+        seats INTEGER NOT NULL CHECK (seats IN (2, 4, 6, 8)),
+        location VARCHAR2(20 CHAR) NOT NULL CHECK (location IN ('window', 'interior')),
         restaurant_id INTEGER NOT NULL,
         CONSTRAINT diningtable_restaurant_fk FOREIGN KEY (restaurant_id) REFERENCES Restaurants (id)
     );
