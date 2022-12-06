@@ -37,7 +37,7 @@ CREATE TABLE
 CREATE TABLE
     People (
         id INTEGER PRIMARY KEY,
-        person_name VARCHAR2(20 CHAR) NOT NULL,
+        person_name VARCHAR2(50 CHAR) NOT NULL,
         dob DATE NOT NULL,
         email VARCHAR2(255 CHAR) NOT NULL,
         phone_number VARCHAR2(15 CHAR) NOT NULL,
