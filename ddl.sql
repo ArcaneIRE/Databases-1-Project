@@ -85,7 +85,7 @@ CREATE TABLE
         id INTEGER PRIMARY KEY,
         timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         num_people INTEGER NOT NULL,
-        booking_method VARCHAR2(20 CHAR) NOT NULL,
+        booking_method VARCHAR2(20 CHAR) NOT NULL CHECK (booking_method IN ('online', 'phone', 'manager')),
         dining_table_id INTEGER NOT NULL,
         booking_customer_id INTEGER NOT NULL,
         waiter_id INTEGER NOT NULL,
