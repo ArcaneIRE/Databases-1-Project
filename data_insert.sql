@@ -3,7 +3,16 @@
 -- 10 for staff
 -- 5 for restaurants
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         1,
@@ -17,7 +26,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         2,
@@ -31,7 +49,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         3,
@@ -45,7 +72,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         4,
@@ -59,7 +95,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         5,
@@ -73,7 +118,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         6,
@@ -87,7 +141,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         7,
@@ -101,7 +164,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         8,
@@ -115,7 +187,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         9,
@@ -129,7 +210,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         10,
@@ -143,7 +233,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         11,
@@ -157,7 +256,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         12,
@@ -171,7 +279,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         13,
@@ -185,7 +302,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         14,
@@ -199,7 +325,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         15,
@@ -213,7 +348,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         16,
@@ -227,7 +371,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         17,
@@ -241,7 +394,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         18,
@@ -255,7 +417,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         19,
@@ -269,7 +440,16 @@ VALUES
     );
 
 INSERT INTO
-    Addresses
+    Addresses (
+        id,
+        line1,
+        line2,
+        line3,
+        locality,
+        region,
+        postcode,
+        country
+    )
 VALUES
     (
         20,
