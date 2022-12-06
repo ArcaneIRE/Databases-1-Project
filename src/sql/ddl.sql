@@ -1,3 +1,7 @@
+ -- Contributors:
+-- David Corcoran – D22126022 
+-- Kai Reid – C21745961 
+--
 DROP TABLE
     BookingGuests;
 

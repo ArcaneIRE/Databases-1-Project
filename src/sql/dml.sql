@@ -1,5 +1,8 @@
- --  Include all the following statements, using comments to highlight when one is
--- being addressed and include an explanation of their implementation.
+ -- Contributors:
+-- David Corcoran – D22126022 
+-- Kai Reid – C21745961 
+--
+--
 --
 -- One UPDATE or one DELETE combined with a subquery
 --

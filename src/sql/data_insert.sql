@@ -1,4 +1,8 @@
- -- 20 Total Addresses:
+ -- Contributors:
+-- David Corcoran – D22126022 
+-- Kai Reid – C21745961 
+--
+-- 20 Total Addresses:
 -- 5 for customers
 -- 10 for staff
 -- 5 for restaurants
