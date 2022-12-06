@@ -956,3 +956,68 @@ INSERT INTO
     Customers (id, person_id)
 VALUES
     (5, 15);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (1, 2, 'online', 1, 1, 1, 2);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (2, 4, 'phone', 2, 2, 3, 4);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (3, 6, 'manager', 3, 3, 5, 6);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (4, 8, 'online', 4, 4, 7, 8);
+
+INSERT INTO
+    BookingReceipts (
+        id,
+        num_people,
+        booking_method,
+        dining_table_id,
+        booking_customer_id,
+        waiter_id,
+        manager_id
+    )
+VALUES
+    (5, 2, 'phone', 5, 5, 9, 10);
