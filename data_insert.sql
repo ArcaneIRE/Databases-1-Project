@@ -1023,22 +1023,26 @@ VALUES
     (5, 2, 'phone', 5, 5, 9, 10);
 
 INSERT INTO
-    BookingGuests (booking_receipt_id, person_id)
+    BookingGuests (booking_id, customer_id)
 VALUES
-    (1, 11)
+    (1, 1);
+
 INSERT INTO
-    BookingGuests (booking_receipt_id, person_id)
+    BookingGuests (booking_id, customer_id)
 VALUES
-    (1, 12)
+    (2, 2);
+
 INSERT INTO
-    BookingGuests (booking_receipt_id, person_id)
+    BookingGuests (booking_id, customer_id)
 VALUES
-    (1, 13)
+    (3, 3);
+
 INSERT INTO
-    BookingGuests (booking_receipt_id, person_id)
+    BookingGuests (booking_id, customer_id)
 VALUES
-    (1, 14)
+    (4, 4);
+
 INSERT INTO
-    BookingGuests (booking_receipt_id, person_id)
+    BookingGuests (booking_id, customer_id)
 VALUES
-    (1, 15)
+    (5, 5);
