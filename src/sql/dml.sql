@@ -97,3 +97,4 @@ FROM
 
 --  One INTERSECT
 --  One VIEW
+COMMIT;
