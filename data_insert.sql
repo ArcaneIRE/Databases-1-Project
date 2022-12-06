@@ -931,3 +931,28 @@ VALUES
         TO_DATE('2022-01-01', 'YYYY-MM-DD'),
         5
     );
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (1, 11);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (2, 12);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (3, 13);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (4, 14);
+
+INSERT INTO
+    Customers (id, person_id)
+VALUES
+    (5, 15);
