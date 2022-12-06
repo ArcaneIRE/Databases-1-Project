@@ -96,6 +96,20 @@ FROM
     JOIN Customers ON People.id = Customers.person_id;
 
 --  One INTERSECT
+--
+-- It shows a list of all the table sizes that had bookings that filled 
+-- every seat at the table. It does this by intersecting a list of all booking
+-- sizes and all table sizes.
+SELECT
+    num_people AS "Table Size = Group Size"
+FROM
+    BookingReceipts
+INTERSECT
+SELECT
+    seats
+FROM
+    DiningTables;
+
 --  One VIEW
 --
 -- Creates a virtual table that contains a list of restaurants with their phone numbers 
@@ -118,4 +132,4 @@ GROUP BY
 SELECT
     *
 FROM
-    BookingCounts
+    BookingCounts COMMIT;
