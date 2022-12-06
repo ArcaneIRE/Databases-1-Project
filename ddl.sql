@@ -67,7 +67,6 @@ CREATE TABLE
         person_id INTEGER NOT NULL,
         role VARCHAR2(20 CHAR) NOT NULL CHECK (role IN ('waiter', 'manager')),
         start_date DATE NOT NULL,
-        branch VARCHAR2(20 CHAR) NOT NULL,
         email VARCHAR2(255 CHAR) NOT NULL CHECK (email LIKE '%@burgershack.com'),
         restaurant_id INTEGER NOT NULL,
         CONSTRAINT staff_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
@@ -78,6 +77,7 @@ CREATE TABLE
     Customers (
         id INTEGER PRIMARY KEY,
         person_id INTEGER,
+        email VARCHAR2(255 CHAR) NOT NULL,
         CONSTRAINT customer_person_fk FOREIGN KEY (person_id) REFERENCES People (id)
     );
 
@@ -89,7 +89,6 @@ CREATE TABLE
         booking_method VARCHAR2(20 CHAR) NOT NULL CHECK (booking_method IN ('online', 'phone', 'manager')),
         dining_table_id INTEGER NOT NULL,
         booking_customer_id INTEGER NOT NULL,
-        age INTEGER NOT NULL,
         waiter_id INTEGER NOT NULL,
         manager_id INTEGER NOT NULL,
         CONSTRAINT bookingreceipt_waiter_fk FOREIGN KEY (waiter_id) REFERENCES Staff (id),
