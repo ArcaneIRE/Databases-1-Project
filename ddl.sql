@@ -117,7 +117,7 @@ BEGIN
 SELECT
     dob INTO v_dob
 FROM
-    Person
+    People
 WHERE
     id = customer_id;
 
@@ -132,8 +132,9 @@ END;
 
 END;
 
+/
 -- Create a constraint on the BookingReceipts table that uses the is_customer_over_18 UDF
 ALTER TABLE
     BookingReceipts
 ADD
-    CONSTRAINT customer_over_18_ck CHECK (is_customer_over_18 (customer_id) = 1);
+    CONSTRAINT customer_over_18_ck CHECK (is_customer_over_18 (booking_customer_id) = 1);
