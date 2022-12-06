@@ -89,6 +89,7 @@ CREATE TABLE
         booking_method VARCHAR2(20 CHAR) NOT NULL,
         dining_table_id INTEGER NOT NULL,
         booking_customer_id INTEGER NOT NULL,
+        age INTEGER NOT NULL,
         waiter_id INTEGER NOT NULL,
         manager_id INTEGER NOT NULL,
         CONSTRAINT bookingreceipt_waiter_fk FOREIGN KEY (waiter_id) REFERENCES Staff (id),
@@ -106,35 +107,28 @@ CREATE TABLE
         PRIMARY KEY (booking_id, customer_id)
     );
 
--- Oracle SQL UDF to check customer > 18. Questionable formatting by the prettier plugin
 CREATE
-OR REPLACE FUNCTION is_customer_over_18 (customer_id NUMBER) RETURN NUMBER AS v_dob DATE;
-
-v_age NUMBER;
+OR REPLACE TRIGGER check_customer_age BEFORE
+INSERT
+    ON BookingReceipts FOR EACH ROW
+DECLARE
+    customer_age NUMBER;
 
 BEGIN
-    -- Query the dob from the Person table using the customer id
+    -- Calculate the age of the customer based on their DOB
 SELECT
-    dob INTO v_dob
+    FLOOR(MONTHS_BETWEEN(SYSDATE, p.dob) / 12) INTO customer_age
 FROM
-    People
+    People p
 WHERE
-    id = customer_id;
+    p.id = :NEW.booking_customer_id;
 
--- Calculate the age from the dob
-v_age := trunc(months_between(sysdate, v_dob) / 12);
+-- Check if the customer's age is over 18
+IF customer_age < 18 THEN RAISE_APPLICATION_ERROR (
+    -20001,
+    'Customer must be over 18 to create a BookingReceipt'
+);
 
--- Return 1 if the age is over 18, 0 otherwise
-RETURN CASE
-    WHEN v_age >= 18 THEN 1
-    ELSE 0
+END IF;
+
 END;
-
-END;
-
-/
--- Create a constraint on the BookingReceipts table that uses the is_customer_over_18 UDF
-ALTER TABLE
-    BookingReceipts
-ADD
-    CONSTRAINT customer_over_18_ck CHECK (is_customer_over_18 (booking_customer_id) = 1);
