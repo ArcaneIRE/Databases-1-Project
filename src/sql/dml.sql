@@ -49,6 +49,16 @@ GROUP BY
     staff.role;
 
 --  One LEFT OUTER JOIN
+--
+-- Lists all people from the people table, alongside their bookings and booking size, if they have any
+SELECT
+    People.person_name,
+    BookingReceipts.id AS "Booking ID",
+    BookingReceipts.num_people
+FROM
+    People
+    LEFT OUTER JOIN BookingReceipts ON People.id = BookingReceipts.booking_customer_id;
+
 --  One RIGHT OUTER JOIN
 --  One UNION
 --  One INTERSECT
