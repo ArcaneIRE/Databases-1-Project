@@ -18,6 +18,21 @@ SET
     );
 
 --  One selection function CASE/DECODE
+--
+-- Uses CASE to give a readable alias for each table size
+SELECT
+    id AS "Table ID",
+    location,
+    CASE
+        WHEN seats = 2 THEN 'Small'
+        WHEN seats = 4 THEN 'Medium'
+        WHEN seats = 6 THEN 'Large'
+        WHEN seats = 8 THEN 'Extra Large'
+        ELSE 'Size not found'
+    END AS "TABLE SIZE",
+FROM
+    DiningTables;
+
 --  One INNER JOIN using a GROUP function
 --  One LEFT OUTER JOIN
 --  One RIGHT OUTER JOIN
