@@ -771,3 +771,53 @@ INSERT INTO
     Restaurants (id, phone_number, address_id)
 VALUES
     (5, '5555551616', 20);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (1, 4, 'window', 1);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (2, 2, 'interior', 1);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (3, 6, 'window', 2);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (4, 4, 'interior', 2);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (5, 8, 'window', 3);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (6, 6, 'interior', 3);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (7, 4, 'window', 4);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (8, 8, 'interior', 4);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (9, 8, 'window', 5);
+
+INSERT INTO
+    DiningTables (id, seats, location, restaurant_id)
+VALUES
+    (10, 2, 'interior', 5);
