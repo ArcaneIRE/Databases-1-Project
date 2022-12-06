@@ -1006,3 +1006,5 @@ INSERT INTO
     BookingGuests (booking_id, customer_id)
 VALUES
     (5, 5);
+
+COMMIT;
