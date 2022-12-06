@@ -67,7 +67,6 @@ CREATE TABLE
         person_id INTEGER NOT NULL,
         role VARCHAR2(20 CHAR) NOT NULL CHECK (role IN ('waiter', 'manager')),
         start_date DATE NOT NULL,
-        branch VARCHAR2(20 CHAR) NOT NULL,
         email VARCHAR2(255 CHAR) NOT NULL CHECK (email LIKE '%@burgershack.com'),
         restaurant_id INTEGER NOT NULL,
         CONSTRAINT staff_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
