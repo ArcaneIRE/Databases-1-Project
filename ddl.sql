@@ -132,3 +132,28 @@ IF customer_age < 18 THEN RAISE_APPLICATION_ERROR (
 END IF;
 
 END;
+/ 
+
+CREATE
+OR REPLACE TRIGGER num_people_check_trigger BEFORE
+INSERT
+    ON BookingReceipts FOR EACH ROW
+DECLARE
+    table_seats NUMBER;
+
+BEGIN
+SELECT
+    seats INTO table_seats
+FROM
+    DiningTables d
+WHERE
+    d.id = :NEW.dining_table_id;
+
+IF :NEW.num_people > table_seats THEN RAISE_APPLICATION_ERROR (
+    -20001,
+    'Number of people exceeds number of seats at the dining table'
+);
+
+END IF;
+
+END;
