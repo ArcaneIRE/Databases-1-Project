@@ -821,3 +821,113 @@ INSERT INTO
     DiningTables (id, seats, location, restaurant_id)
 VALUES
     (10, 2, 'interior', 5);
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        1,
+        1,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        1
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        2,
+        2,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        1
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        3,
+        3,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        2
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        4,
+        4,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        2
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        5,
+        5,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        3
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        6,
+        6,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        3
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        7,
+        7,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        4
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        8,
+        8,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        4
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        9,
+        9,
+        'waiter',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        5
+    );
+
+INSERT INTO
+    Staff (id, person_id, role, start_date, restaurant_id)
+VALUES
+    (
+        10,
+        10,
+        'manager',
+        TO_DATE('2022-01-01', 'YYYY-MM-DD'),
+        5
+    );
