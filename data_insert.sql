@@ -746,3 +746,28 @@ VALUES
         '5555552626',
         15
     );
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (1, '5555551212', 16);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (2, '5555551313', 17);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (3, '5555551414', 18);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (4, '5555551515', 19);
+
+INSERT INTO
+    Restaurants (id, phone_number, address_id)
+VALUES
+    (5, '5555551616', 20);
