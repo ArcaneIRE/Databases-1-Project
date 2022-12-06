@@ -25,13 +25,13 @@ DROP TABLE
 CREATE TABLE
     Addresses (
         id INTEGER PRIMARY KEY,
-        line1 VARCHAR2(20 CHAR) NOT NULL,
-        line2 VARCHAR2(20 CHAR),
-        line3 VARCHAR2(20 CHAR),
-        locality VARCHAR2(20 CHAR),
-        region VARCHAR2(20 CHAR) NOT NULL,
-        postcode VARCHAR2(20 CHAR),
-        country VARCHAR2(20 CHAR) NOT NULL
+        line1 VARCHAR2(30 CHAR) NOT NULL,
+        line2 VARCHAR2(30 CHAR),
+        line3 VARCHAR2(30 CHAR),
+        locality VARCHAR2(30 CHAR),
+        region VARCHAR2(30 CHAR) NOT NULL,
+        postcode VARCHAR2(30 CHAR),
+        country VARCHAR2(30 CHAR) NOT NULL
     );
 
 CREATE TABLE
