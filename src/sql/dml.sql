@@ -37,6 +37,17 @@ FROM
     DiningTables;
 
 --  One INNER JOIN using a GROUP function
+--
+-- Finds the oldest staff member in each role and returns their birthday
+SELECT
+    staff.role,
+    MIN(people.dob) AS "Oldest Birthdate"
+FROM
+    Staff
+    INNER JOIN People ON Staff.person_id = People.id
+GROUP BY
+    staff.role;
+
 --  One LEFT OUTER JOIN
 --  One RIGHT OUTER JOIN
 --  One UNION
