@@ -77,6 +77,7 @@ CREATE TABLE
     Customers (
         id INTEGER PRIMARY KEY,
         person_id INTEGER,
+        email VARCHAR2(255 CHAR) NOT NULL,
         CONSTRAINT customer_person_fk FOREIGN KEY (person_id) REFERENCES People (id)
     );
 
