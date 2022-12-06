@@ -40,5 +40,25 @@ FROM
 --  One LEFT OUTER JOIN
 --  One RIGHT OUTER JOIN
 --  One UNION
+-- 
+-- Returns the following 4 shared attributes of all Staff and Customers
+SELECT
+    person_name,
+    dob,
+    phone_number,
+    email
+FROM
+    People
+    JOIN Staff ON People.id = Staff.person_id
+UNION
+SELECT
+    person_name,
+    dob,
+    phone_number,
+    email
+FROM
+    People
+    JOIN Customers ON People.id = Customers.person_id;
+
 --  One INTERSECT
 --  One VIEW
