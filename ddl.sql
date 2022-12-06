@@ -39,7 +39,6 @@ CREATE TABLE
         id INTEGER PRIMARY KEY,
         person_name VARCHAR2(20 CHAR) NOT NULL,
         dob DATE NOT NULL,
-        email VARCHAR2(255 CHAR) NOT NULL,
         phone_number VARCHAR2(15 CHAR) NOT NULL,
         address_id INTEGER NOT NULL,
         CONSTRAINT people_address_fk FOREIGN KEY (address_id) REFERENCES Addresses (id)
@@ -68,6 +67,8 @@ CREATE TABLE
         person_id INTEGER NOT NULL,
         role VARCHAR2(20 CHAR) NOT NULL CHECK (role IN ('waiter', 'manager')),
         start_date DATE NOT NULL,
+        branch VARCHAR2(20 CHAR) NOT NULL,
+        email VARCHAR2(255 CHAR) NOT NULL CHECK (email LIKE '%@burgershack.com'),
         restaurant_id INTEGER NOT NULL,
         CONSTRAINT staff_person_fk FOREIGN KEY (person_id) REFERENCES People (id),
         CONSTRAINT staff_restaurants_fk FOREIGN KEY (restaurant_id) REFERENCES Restaurants (id)
