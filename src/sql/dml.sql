@@ -132,4 +132,6 @@ GROUP BY
 SELECT
     *
 FROM
-    BookingCounts COMMIT;
+    BookingCounts;
+
+COMMIT;
