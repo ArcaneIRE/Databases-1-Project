@@ -1021,3 +1021,24 @@ INSERT INTO
     )
 VALUES
     (5, 2, 'phone', 5, 5, 9, 10);
+
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 11)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 12)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 13)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 14)
+INSERT INTO
+    BookingGuests (booking_receipt_id, person_id)
+VALUES
+    (1, 15)
