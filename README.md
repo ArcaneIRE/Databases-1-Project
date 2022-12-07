@@ -16,8 +16,8 @@ An Oracle SQL database for a restaurant chain.
 
 - [x] Build database to match physical model
 - [x] Populate database with dummy data
-- [ ] Create SQl statements to fulfill requirements
+- [x] Create SQl statements to fulfill requirements
 
 ### 3. Documentation
 
-- [ ] Create project report
+- [x] Create project report
