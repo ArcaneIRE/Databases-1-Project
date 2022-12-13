@@ -1,6 +1,6 @@
 # Burger Shack Database
 
-An Oracle SQL database for a restaurant chain.
+An Oracle SQL database for a restaurant chain. Created for our second year databases module.
 
 - Scenario given in the [case study notes](/spec/case_study_notes.md)
 - Exact specifications given in the [project spec notes](spec/project_spec_notes)
